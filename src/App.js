@@ -1,6 +1,7 @@
 
 import './App.css';
 import { useState } from 'react'
+import Button from './Componenets/Button'
 
 function App() {
 
@@ -20,14 +21,16 @@ function App() {
     return count
   }
 
+  
+
 
 
   return (
     <div className="App">
       <header className="App-header">
        {count}
-       <button onClick={maxLimit}>Aumentar</button>
-       <button onClick={minLimit}>Disminuir</button>
+       <Button name="aumentar" func={maxLimit}/>
+       <Button name="disminuir"func={minLimit}/>
 
       </header>
     </div>
